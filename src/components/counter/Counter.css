@@ -1,29 +1,29 @@
 .counter {
-    border: 2px solid cadetblue;
-    display: inline-flex;
-    padding: 0.5em;
-    border-radius: 0.5em;
-    align-items: center;
+  border: 2px solid cadetblue;
+  display: inline-flex;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  align-items: center;
 }
 
 .counter > * {
-    margin: 0.5em;
+  margin: 0.5em;
 }
 
 .counter > button {
-    background-color: salmon;
-    border-radius: 1em;
-    border: none;
-    color: cornsilk;
-    font-weight: 900;
-    height: 2em;
-    width: 2em;
+  background-color: salmon;
+  border-radius: 1em;
+  border: none;
+  color: cornsilk;
+  font-weight: 900;
+  height: 2em;
+  width: 2em;
 }
 
 .counter > button:hover {
-    background-color: coral;
+  background-color: coral;
 }
 
 .counter > button:disabled {
-    background-color: lightgray;
+  background-color: lightgray;
 }
