@@ -25,15 +25,16 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - run: npm install
-    - run: npm run build --if-present
-      env:
-        CI: true
 
     - name: Deploy to Firebase
       run: |
+        npm install
+        npm run build
         npm install firebase-tools
         npx firebase deploy \
           -m "${GITHUB_SHA}" \
           --project coreofscience \
           --only hosting:js-bark
+      env:
+        CI: true
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
