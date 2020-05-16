@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "public": "styleguide",
+    "site": "js-bark",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
