@@ -5,12 +5,12 @@ const Demo = () => {
   const [progress, setProgress] = useState(1);
   useEffect(() => {
     const interval = window.setInterval(() => {
-      setProgress((progress + 5) % 100);
+      setProgress(Math.floor(Date.now() / 80) % 100);
     }, 500);
     return () => {
       window.clearInterval(interval);
     };
-  }, [progress]);
+  }, []);
   return <ProgressBar progress={progress} />;
 };
 
