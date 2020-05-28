@@ -100,4 +100,5 @@ const Demo = () => {
 ```
 
 The component adds some margin around so that we can fit the progress bar
-comfortably.
+comfortably. Notice that, it looks way better if the child components don't have
+a margin.
