@@ -19,7 +19,13 @@ const Tree: FC = () => {
                 <h3>Title {number + 1}</h3>
                 <div className="Article-info">
                   <p>More info</p>
-                  <a href="https://dx.doi.org/">DDOIDOIDO/IOI</a>
+                  <a
+                    href="https://dx.doi.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    DDOIDOIDO/IOI
+                  </a>
                 </div>
               </div>
             ))}
